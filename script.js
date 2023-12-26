@@ -1,9 +1,9 @@
 //your JS code here. If required.
-const para = document.getElementById("para");
-const click = document.getElementById("click");
+const para = document.getElementById("status");
 
 function buttonClick(){
-	para.innerText="Enter the Metaverse"
-	para.style.fontWeight = "bold";
-	para.style.fontSize = "20px"
+	const head = document.createElement("h1");
+	para.innerText="Enter the Metaverse";
+	head.innerText = para.innerText;
+	para.parentNode.replaceChild(head,para);
 }
